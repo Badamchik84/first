@@ -1,26 +1,43 @@
         
             body {
-                background-color:rgb(139, 218, 218);
+                background-color: #8EC5FC;
+                background-image: linear-gradient(270deg, #8EC5FC 0%, #E0C3FC 100%);
+                margin: 0%;
+                padding: 0%;
+            }
+            
+            .navi {
+                background-color: rgb(189, 201, 211);
+                border-radius: 5px;
+                box-sizing: border-box;
+                padding: 5px;
+            }
+            .h1 {
+                text-align: center;
+                font-size: 2.2em;
+
             }
         
-            div {
+            .desktop {
                 display: inline-block;
                 position: relative;
                 left: 40px;
                 width: 30%;
                 box-sizing: border-box;
                 padding: 5px 10px;
-                box-sizing: border-box;
                 transition: all 0.45s;
-
-                
-        
             }
-            a {
-                padding: 0 10px;
+          
+            .link {
+                background-color:rgb(116, 95, 135);
+                border-radius: 5px;
+                text-decoration: none;
+                padding: 3px;
+                position: relative;
+    
 
             }
-            div:hover {
+            .desktop:hover {
                 transform: scale(1.07,1.07);
             }
             img {
@@ -28,12 +45,16 @@
                 border-radius: 13px 0 13px 0;
             }
             a:link{
-                color: white;
+                color: rgb(238, 223, 223);
             }
             
             a:visited{
                 color:rgb(189, 184, 184);
             
+            }
+            .link:hover {
+                background-color: rgb(147, 120, 87);
+                transition: all 0.3s;
             }
             .mobile {
                 display:none;
@@ -59,19 +80,15 @@
             /* стили которые менятся на мобиле*/
 
             @media(max-width : 500px){
-                div {
+                .mobile {
                     width: 100%;
-                    padding: 0 20px;
+                    padding-top: 6px;
                     
                 }
                 div:hover{
                     transform: none;
                 }
-                body nav a {
-                    display: block;
-                    text-align: center;
-                    background-color:none;
-                }
+                
                 .desktop {
                     display: none;
                 }
@@ -79,18 +96,23 @@
                     display:block;
 
                 }
-                div {
-                    position: static;
-                }
+                
                 img {
                     border-radius: 5px;
                 }
-                .mobile {
-                    padding-top: 6px;
+                nav {
+                    display: block;
+                }
+                .name {
+                    text-align: center;
+                }
+                .navi a {
+                    display: block;
+                    text-align: center;
+                }
+                
                 }
                 
                 
-                }
-
-            
-         
+                
+                
