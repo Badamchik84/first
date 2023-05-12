@@ -82,7 +82,8 @@
             @media(max-width : 500px){
                 .mobile {
                     width: 100%;
-                    padding-top: 6px;
+                    padding: 12px;
+                    box-sizing: border-box;
                     
                 }
                 div:hover{
